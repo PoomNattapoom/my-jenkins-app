@@ -6,16 +6,18 @@ pipeline {
     }
 
     stages {
-        stage('Clone'){
+        stage('Clone') {
             steps {
                 git 'https://github.com/PoomNattapoom/my-jenkins-app.git'
             }
         }
+
         stage('Install Dependencies') {
             steps {
                 sh 'npm install'
             }
         }
+
         stage('Build') {
             steps {
                 echo 'No build step for now'
@@ -24,7 +26,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'No Tests yet'
+                echo 'No tests yet'
             }
         }
 
@@ -35,6 +37,4 @@ pipeline {
             }
         }
     }
-
-
 }
