@@ -6,11 +6,11 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
-            steps {
-                git 'https://github.com/PoomNattapoom/my-jenkins-app.git'
-            }
-        }
+        // stage('Clone') {
+        //     steps {
+        //         git 'https://github.com/PoomNattapoom/my-jenkins-app.git'
+        //     }
+        // }
 
         stage('Install Dependencies') {
             steps {
